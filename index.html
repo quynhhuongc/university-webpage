@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Stanbridge University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&family=Poppins:wght@400;500&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./resources/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Stanbridge University</div> 
+      <nav class="menu" id="menu">
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Academics</a></li>
+          <li><a href="">Campus Life</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>  
+     <!--Banner section  -->
+    <div class="banner">
+      <h1>Stanbridge University</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <a href="" class="banner-btn">Learn More</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Academics section -->
+    <div class="academics">
+      <div class="intro" id="intro">
+        <h2>Academics</h2>
+        <p>Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world</p>
+      </div>
+      <div class="course-container">
+        <div class="image-box">
+          <img src="./resources/images/academics-1.jpg">
+          <div class="course-description">
+            <h3>Undergraduate Education</h3>
+            <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua.</p>
+            <a href="">Read more...</a>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src="./resources/images/academics-2.jpg">
+          <div class="course-description">
+            <h3>Graduate Education</h3>
+            <p>Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur.</p>
+            <a href="">Read more...</a>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src="./resources/images/academics-3.jpg">
+          <div class="course-description">
+            <h3>Driving impacts</h3>
+            <p>Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur.</p>
+            <a href="">Read more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Campus section -->
+    <div class="campus">
+      <div class="intro" id="intro">
+        <h2>Our campus</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+      </div>
+      <div class="campus-container">
+        <div class="campus-img-box">
+          <img src="./resources/images/london.png">
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-img-box">
+          <img src="./resources/images/la.png">
+          <div class="layer">
+            <h3>Los Angeles</h3>
+          </div>
+        </div>
+        <div class="campus-img-box">
+          <img src="./resources/images/washington.png">
+          <div class="layer">
+            <h3>Washington</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Call to action section -->
+    <div class="cta">
+      <h2>Enroll in our various online courses<br>from anywhere in the world</h2>
+      <a href="" class="banner-btn">Contact Us</a>
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut dolore.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+  </footer>
+
+  <!-- Toggle menu section -->
+  <script>
+
+    const menu = document.getElementById("menu");
+    function showMenu() {
+      menu.style.right = "0";
+    }
+    function hideMenu() {
+      menu.style.right = "-250px";
+    }
+    
+  </script>
+
+</body>
+</html>
